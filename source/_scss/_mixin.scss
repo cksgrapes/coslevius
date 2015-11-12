@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+@mixin clearfix {
+    zoom: 1;
+    &:after {
+        content: "";
+    }
+}
+
+@mixin blockCenter($width) {
+    width: $width;
+    margin: 0 auto;
+}
+
+@mixin absolute0 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+@mixin inlineBlock($gutter) {
+    margin-left: -#{$gutter};
+    li {
+        float: left;
+        margin-left: $gutter;
+    }
+}
+
+@mixin titleIcon($path,$pdl,$pos1:left,$pos2:center) {
+    background: url(#{$imgPath}#{$path}) no-repeat $pos1 $pos2;
+    padding-left: $pdl;
+}
