@@ -1,0 +1,4 @@
+suPHP_ConfigPath /home/kaico/kaico.xsrv.jp/xserver_php/
+AddHandler fcgid-script .php .phps
+FCGIWrapper "/home/kaico/kaico.xsrv.jp/xserver_php/php-cgi" .php
+FCGIWrapper "/home/kaico/kaico.xsrv.jp/xserver_php/php-cgi" .phps
