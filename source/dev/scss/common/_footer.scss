@@ -1,0 +1,24 @@
+.footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background: #333;
+	width: 100%;
+	height: 130px;
+	@media #{$small} {
+		height: 100px;
+	}
+}
+
+.copy {
+	margin: 0;
+	padding: 20px 0 10px;
+	text-align: center;
+	font-size: 1.4rem;
+	color: #fff;
+}
+
+.webdesign {
+	margin: 0;
+	text-align: center;
+}

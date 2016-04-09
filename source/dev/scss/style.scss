@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+//-------------------------
+// 基本構成
+//-------------------------
+
+//変数定義
+@import "common/config";
+//mixin & function
+@import "common/utility";
+//normalize.css
+@import "common/normalize";
+
+//タグルール
+@import "common/init";
+//共通パーツ
+@import "common/layout";
+//共通パーツ
+@import "common/module";
+//ヘッダー
+@import "common/header";
+//フッター
+@import "common/footer";
+//プラグイン
+@import "common/plugin";
+
+//トップ
+@import "page/top";
+//ブログ
+@import "page/blog";

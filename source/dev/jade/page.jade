@@ -1,0 +1,100 @@
+extends templates/_layout.jade
+
+block content
+	.page-background
+		main.main
+			.main-heading
+				.main-heading--en Join
+				h1.main-heading--ja 参加方法
+			.contents
+				.main-column
+					section.section
+						h2.section-heading--01: span 参加申請
+						p コスレヴィアスが開催するイベントは会場に人数制限があるため、事前に参加登録を行っていただいております。前金やキャンセル料の発生などはありませんので、「仕事のスケジュールがわからない…」「学校の行事があるかも…」という方も、まずはお気軽にお申込みください。
+					section.section
+						h2.section-heading--01: span 料金
+						section
+							h3.section-heading--02: span 参加費について
+							p コスレヴィアスが開催するイベントは会場に人数制限があるため、事前に参加登録を行っていただいております。前金やキャンセル料の発生などはありませんので、「仕事のスケジュールがわからない…」「学校の行事があるかも…」という方も、まずはお気軽にお申込みください。
+						p コスレヴィアスが開催するイベントは会場に人数制限があるため、事前に参加登録を行っていただいております。前金やキャンセル料の発生などはありませんので、「仕事のスケジュールがわからない…」「学校の行事があるかも…」という方も、まずはお気軽にお申込みください。
+					section.section
+						h2.section-heading--01: span テーブル・ボタン
+						table.table
+							tbody
+								tr
+									th 日程
+									td 2016年4月5日
+								tr
+									th 日程
+									td 2016年4月5日
+								tr
+									th 日程
+									td 
+										ul.table__list
+											li 飲食持込可、会場内飲食は可能ですゴミは各自でお持ち帰りください。
+											li 武器の持ち込みはOKですが、物によっては主催の許可が必要なります。詳しくは「注意事項」をご確認ください。
+											li 駐車場完備。よかったら乗りあわせていただける会場にやさしいです。
+											li 会場自体は9時には入れますが、会場の関係上、一般のお客さまもいらっしゃるため、9時45分より前からの入場はご遠慮ください。（車内待機はOKです）
+											li 一般さん大歓迎です！
+						.action-btn
+							a.action-btn__item.action-btn__item--disable.action-btn__item--prev(href=""): span イベントについて問い合わせる
+							button.action-btn__item.action-btn__item--next: span 注意事項を読んで参加申請をする
+						.action-btn
+							button.action-btn__item: span 注意事項を読んで参加申請をする
+					section.section
+						h2.section-heading--01: span フォーム用パーツ
+						form(action="").form
+							dl.form__input
+								dt 申請したい日付
+								dd
+									.form-parts__select
+										select.form-parts__select__item
+											option 第52章　2015年3月16日　青少年センター
+											option 第52章　2015年3月16日　青少年センター
+											option 第52章　2015年3月16日　青少年センター
+											option 第52章　2015年3月16日　青少年センター
+											option 第52章　2015年3月16日　青少年センター
+											option 第52章　2015年3月16日　青少年センター
+							dl.form__input
+								dt コスネーム
+								dd: input.form-parts__textline(type="text",placeholder="貴方のコスネームを教えてください。")
+							dl.form__input
+								dt 参加予定
+								dd
+									input.form-parts__radio(type="radio",name="sanka",id="sanka01")
+									label.form-parts__radio__label(for="sanka01") 確定
+									input.form-parts__radio(type="radio",name="sanka",id="sanka02")
+									label.form-parts__radio__label(for="sanka02") 未確定
+							dl.form__input
+								dt 参加枠
+								dd
+									input.form-parts__radio(type="radio",name="sankawaku",id="sankawaku01")
+									label.form-parts__radio__label(for="sankawaku01") コスプレ
+									input.form-parts__radio(type="radio",name="sankawaku",id="sankawaku02")
+									label.form-parts__radio__label(for="sankawaku02") 一般
+							dl.form__input
+								dt コスネーム
+								dd: input.form-parts__textline(type="text",placeholder="貴方のコスネームを教えてください。")
+								dd: textarea.form-parts__textbox
+							dl.form__input
+								dt 参加枠（詳細）
+								dd
+									input.form-parts__radio(type="radio",name="sankawakushosai",id="sankawakushosai01")
+									label.form-parts__radio__label(for="sankawakushosai01") カメコ
+									input.form-parts__radio(type="radio",name="sankawakushosai",id="sankawakushosai02")
+									label.form-parts__radio__label(for="sankawakushosai02") その他
+										.form-parts__radio__textline: input(type="text")
+							p.form__attention
+								input.form__attention__check(type="checkbox",id="check")
+								label.form__attention__check--label(for="check") 注意事項に同意した上で応募します。
+							.action-btn
+								button.action-btn__item: span 送信する
+				.sidebar--2columns
+					.sidebar__box
+						ul.menu-list.menu-list--events
+							li.current: a(href=""): span 参加申請
+							li: a(href=""): span 料金
+							li: a(href=""): span キャンセルについて
+							li: a(href=""): span その他
+							|<li><a href="http://coslevius.cks/events/92/"><span class="menu-list--events__count">第67章　</span><span class="menu-list--events__date">2016年03月31日（木）</span><span class="menu-list--events__location">青少年センター</span></a></li>
+

@@ -1,0 +1,24 @@
+
+## BEGIN WordPress
+#<IfModule mod_rewrite.c>
+#RewriteEngine On
+#RewriteBase /
+#RewriteRule ^index\.php$ - [L]
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule . /index.php [L]
+#</IfModule>
+
+## END WordPress
+
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^(coslevius.setunasan.net)(:80)? [NC]
+
+RewriteRule ^(.*) http://coslevius.setunasan.net/$1 [R=301,L]
+RewriteCond %{THE_REQUEST} ^.*/index.html
+
+RewriteRule ^(.*)index.html$ http://coslevius.setunasan.net/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(kaico.xsrv.jp/coslevius)(:80)? [NC]
+RewriteRule ^(.*) http://coslevius.setunasan.net/$1 [R=301,L]

@@ -1,0 +1,122 @@
+extends templates/_layout.jade
+
+block content
+	.top-slide
+		.top-slide__wrap
+			.top-slide__inner
+				.top-slide__item: img(src="/assets/img/main_image_01.jpg", alt="")
+			.top-slide__inner
+				.top-slide__item: img(src="/assets/img/main_image_01.jpg", alt="")
+		//- .top-slide__wrap
+		//- 	.top-slide__inner
+		//- 		.top-slide__item: img(src="/assets/img/main_image_01_sp.jpg", alt="")
+		//- 	.top-slide__inner
+		//- 		.top-slide__item: img(src="/assets/img/main_image_01_sp.jpg", alt="")
+		//- 	.top-slide__inner
+		//- 		.top-slider__item: img(src="/assets/img/main_image_01_sp.jpg", alt="")
+		//- 	.top-slide__inner
+		//- 		.top-slider__item: img(src="/assets/img/main_image_01_sp.jpg", alt="")
+		ul.top-slide__ctrls
+			li.top-slide__ctrls__prev
+			li.top-slide__ctrls__next
+		p.shokuri: img(src="/assets/img/shokuri.png", alt="山梨で開催中のコスプレイベント！　更衣室完備、屋外スペースあり！")
+	main.main
+		.contents
+			.main-column--3columns
+				section.section
+						.action-btn.next-event
+							a(href="").action-btn__item.action-btn__item--next-event
+								.next-event__count 第39章
+								.next-event__date 2016年1月10日（日）
+								.next-event__location 青少年センター
+								.next-event__text 次回のイベントに参加する  »
+				.recuruit-staff
+					a(href="/staff/")
+						span Cos Leviusでは
+						| 常時スタッフを募集しております！
+				section.section
+					h2.section-heading--top: span 2016年のスケジュール
+					ul.schedule-list
+						li
+							a(href="").schedule-list__link
+								span.schedule-list__count 第35章
+								span.schedule-list__date 2016年1月20日（水）
+								span.schedule-list__location 青少年センター青少年センター青少年センター
+						li
+							a(href="").schedule-list__link
+								span.schedule-list__count 第35章
+								span.schedule-list__date 2016年1月20日（水）
+								span.schedule-list__location 青少年センター
+						li
+							a(href="").schedule-list__link
+								span.schedule-list__count 第35章
+								span.schedule-list__date 2016年12月20日（水）
+								span.schedule-list__location 青少年センター
+						li
+							a(href="").schedule-list__link
+								span.schedule-list__count 第35章
+								span.schedule-list__date 2016年12月20日（水）
+								span.schedule-list__location 青少年センター
+						li
+							a(href="").schedule-list__link
+								span.schedule-list__count 第35章
+								span.schedule-list__date 2016年12月20日（水）
+								span.schedule-list__location 青少年センター
+				section.section
+					h2.section-heading--top: span 更新履歴
+					.news-list
+						dl.news-list__item
+							dt.news-list__date 2016年1月29日
+							dd.news-list__body
+								p イベント情報追加！
+								p 来年の１１月までイベント情報追加いたしました！<br>ご確認下さい！
+								p 来年の１１月までイベント情報追加いたしました！<br>ご確認下さい！
+								p 来年の１１月までイベント情報追加いたしました！<br>ご確認下さい！
+						dl.news-list__item
+							dt.news-list__date 2016年12月29日
+							dd.news-list__body
+								p イベント情報追加！
+								p 来年の１１月までイベント情報追加いたしました！<br>ご確認下さい！
+						dl.news-list__item
+							dt.news-list__date 2016年1月29日
+							dd.news-list__body
+								p イベント情報追加！
+								p 来年の１１月までイベント情報追加いたしました！<br>ご確認下さい！
+								p 来年の１１月までイベント情報追加いたしました！<br>ご確認下さい！
+								p 来年の１１月までイベント情報追加いたしました！<br>ご確認下さい！
+						dl.news-list__item
+							dt.news-list__date 2016年12月29日
+							dd.news-list__body
+								p イベント情報追加！
+								p 来年の１１月までイベント情報追加いたしました！<br>ご確認下さい！
+			.sidebar--3columns
+				.sidebar__box.top-btns
+					.action-btn.top-btns__btn
+						a.action-btn__item.top-btns__item.top-btns__item--report(href="")
+							span.top-btns__name.top-btns__name--report イベントレポート
+							span.top-btns__name--en event report
+					.action-btn.top-btns__btn
+						a.action-btn__item.top-btns__item(href="")
+							span.top-btns__name <span>主催：</span>妖籠刹那
+							span.top-btns__name--en yoro setuna
+					.action-btn.top-btns__btn
+						a.action-btn__item.top-btns__item(href="")
+							span.top-btns__name <span>副主催：</span>きょんこ
+							span.top-btns__name--en kyonko
+					.action-btn.top-btns__btn
+						a.action-btn__item.top-btns__item.action-btn__item(href="")
+							span.top-btns__name <span>Web担当：</span>雛月ましろ
+							span.top-btns__name--en mashiro hinaduki
+					.sidebar__box
+						p.counter 訪問者総数 : 89232
+			.sidebar--3columns
+				.sidebar__box
+					section.blog-newpost
+						p.blog-newpost__date 2015年12月24日
+						p.blog-newpost__title: span リニューアル！
+						.blog-newpost__body
+							p サイトをリニユアルします！！予定は1月頃！サイトを丸っと新しくして申請もしやすくなるはずです！（？）3年がたち、大きく...なったレ...をもっともっとみんなの力で育てていきましょう！！
+						.action-btn.comments__form__submit
+							a(href="").action-btn__item.action-btn__item--mini: span 主催ブログを見る
+				.sidebar__box
+					|<a class="twitter-timeline" href="https://twitter.com/CosLevius" data-widget-id="559977350125740032">@CosLeviusさんのツイート</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>

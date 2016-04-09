@@ -1,0 +1,16 @@
+
+dl.form__input
+	dt 申請した日付
+	dd
+		.form-parts__select
+			| [mwform_select name="events_date" id="events_date" class="form-parts__select__item" value="syokiti"]
+dl.form__input
+	dt メールアドレス
+	dd
+		| [mwform_text name="events_email" id="events_email" class="form-parts__textline" placeholder="申請時のアドレスを入力してください。" conv_half_alphanumeric="true"]
+dl.form__input.form__input--cosname
+	dt コスネーム
+	dd
+		| [mwform_text name="events_cosname" id="events_cosname" class="form-parts__textline" placeholder="申請時のコスネームを記入してください。" conv_half_alphanumeric="true"]
+.action-btn
+	| [mwform_submitButton name="mwform_submitButton-346" confirm_value="確認する" submit_value="送信する"]

@@ -1,0 +1,234 @@
+.counter {
+	font-size: 1.2rem;
+	color: #999;
+}
+
+.shokuri {
+	position: absolute;
+	top: 104px;
+	left: 50%;
+	width: 656px;
+	height: 206px;
+	transform: translateX(-28%);
+	@media #{$small} {
+		display: none;
+	}
+}
+
+.top-btns {
+	&__btn {
+		display: table;
+		margin: 0;
+		width: 100%;
+	}
+	&__btn + &__btn {
+		margin-top: 10px;
+	}
+	&__item {
+		display: table-cell;
+		padding: 0 10px;
+		vertical-align: middle;
+		text-align: left;
+		line-height: 1;
+		@media #{$small} {
+			overflow: hidden;
+			display: table-cell;
+			line-height: 1;
+		}
+		&--report {
+			height: 100px;
+		}
+	}
+	&__name {
+		display: block;
+		font-size: 1.8rem;
+		@media #{$small} {
+			float: left;
+			font-size: 1.6rem;
+		}
+		span {
+			font-size: 1.4rem;
+			@media #{$small} {
+				font-size: 1.2rem;
+			}
+		}
+		&--en {
+			font-size: 1rem;
+			@media #{$small} {
+				display: block;
+				float: right;
+				font-size: 1.1rem;
+			}
+		}
+		&--report {
+			font-size: 2.4rem;
+			@media #{$small} {
+				font-size: 1.6rem;
+			}
+		}
+	}
+}
+
+.blog-newpost {
+	border: 1px solid #e0e0e0;
+	padding: 10px;
+	&__date {
+		margin: 0;
+		padding: 10px;
+		line-height: 1;
+		background: #f4f4f4;
+		font-size: 1.2rem;
+	}
+	&__title {
+		margin: 0;
+		padding: 10px;
+		border-bottom: 2px solid #78b0da;
+		line-height: 1.5;
+		font-weight: bold;
+	}
+	&__body {
+		padding: 10px;
+		line-height: 1.6;
+		font-size: 1.2rem;
+		p {
+			margin: 0;
+			padding: 0;
+		}
+	}
+	&__data {
+		margin: 10px 10px 0;
+	}
+	a {
+		padding-bottom: 3px;
+		border-bottom: 1px solid #ddd;
+	}
+}
+
+.schedule-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	line-height: 1.6;
+	li {
+		border-bottom: 1px solid #e5e5e5;
+	}
+	&__link {
+		display: block;
+		padding: 11px 0;
+	}
+	&__count {
+		padding-right: 14px;
+	}
+	&__location {
+		display: block;
+		margin-top: -1.6em;
+		margin-left: 222px;
+		@media #{$small} {
+			margin: 0;
+			font-size: 1.2rem;
+		}
+	}
+}
+
+.news-list {
+	&__item {
+		overflow: hidden;
+		margin: 0;
+		padding: 18px 0;
+		font-size: 1.2rem;
+		line-height: 1.5;
+		border-bottom: 1px solid #e5e5e5;
+	}
+	&__date {
+		float: left;
+		font-weight: bold;
+		@media #{$small} {
+			float: none;
+			font-size: 1.4rem;
+			color: #bbb;
+		}
+	}
+	&__body {
+		margin: 0 0 0 120px;
+		@media #{$small} {
+			margin: 10px 0 0;
+		}
+		p {
+			margin: 0;
+			padding: 0;
+		}
+	}
+}
+
+.next-event {
+	margin: 0 0 -20px;
+	@media #{$small} {
+		margin: 0 0 -10px;
+	}
+	&__count {
+		position: absolute;
+		top: 15px;
+		right: 10px;
+		font-size: 5.6rem;
+		color: rgba(255,255,255,0.2);
+		@media #{$small} {
+			top: 10px;
+			font-size: 4rem;
+		}
+	}
+	&__date {
+		position: absolute;
+		top: 15px;
+		left: 15px;
+		font-size: 3rem;
+		text-shadow: 0 0 7px rgba(0,0,0,.2);
+		@media #{$small} {
+			top: 0;
+			font-size: 2rem;
+		}
+	}
+	&:hover &__date {
+		transition: color 0.2s linear;
+		color: rgba(255,255,255,0.2);
+	}
+	&__location {
+		position: absolute;
+		top: 50px;
+		left: 15px;
+		font-size: 2rem;
+		text-shadow: 0 0 7px rgba(0,0,0,.2);
+		@media #{$small} {
+			top: 25px;
+			font-size: 1.6rem;
+		}
+	}
+	&:hover &__location {
+		transition: color 0.2s linear;
+		color: rgba(255,255,255,0.2);
+	}
+	&__text {
+		position: absolute;
+		bottom: 2px;
+		left: 2px;
+		width: 444px;
+		height: 24px;
+		padding: 0 10px;
+		line-height: 24px;
+		font-size: 1.3rem;
+		font-weight: bold;
+		text-align: right;
+		text-shadow: 0 0 7px rgba(0,0,0,.5);
+		background: rgba(255,255,255,0.2);
+		@media #{$small} {
+			width: 100%;
+			font-size: 1.3rem;
+		}
+	}
+	&:hover &__text {
+		transition: font-size 0.2s linear;
+		font-size: 3rem;
+		height: 100px;
+		line-height: 100px;
+		background: rgba(255,255,255,0.1);
+	}
+}

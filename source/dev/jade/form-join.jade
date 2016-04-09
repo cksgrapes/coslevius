@@ -1,0 +1,48 @@
+
+dl.form__input
+	dt 申請したい日付
+	dd
+		.form-parts__select
+			| [mwform_select name="events_date" id="events_date" class="form-parts__select__item" value="syokiti"]
+dl.form__input
+	dt メールアドレス
+	dd
+		| [mwform_text name="events_email" id="events_email" class="form-parts__textline" placeholder="返信用のアドレスを入力してください。" conv_half_alphanumeric="true"]
+for obj in numnum
+	.form__member__box
+		.form__member__main
+			.form__member__num 参加者#{obj.num}
+			.form__member__input
+				dl.form__input.form__input--cosname
+					dt コスネーム
+					dd
+						| [mwform_text name="events_cosname_#{obj.num}" id="events_cosname_#{obj.num}" class="form-parts__textline" placeholder="コスネームを記入してください。" conv_half_alphanumeric="true"]
+				dl.form__input
+					dt 参加予定
+					dd
+						| [mwform_radio name="events_joinplans_#{obj.num}" id="events_joinplans_#{obj.num}" children="確定,未定"]
+				dl.form__input
+					dt 参加枠
+					dd
+						| [mwform_radio name="events_sankawaku_#{obj.num}" id="events_sankawaku_#{obj.num}" children="コスプレ,一般"]
+				dl.form__input.form__input--cosplan.form__input--hide
+					dt 予定コス
+					dd
+						| [mwform_text name="events_cosplan_#{obj.num}" id="events_cosplan_#{obj.num}" class="form-parts__textline" placeholder="予定のジャンルまたはキャラクター名を教えてください。"]
+				dl.form__input.form__input--ippan-details.form__input--hide
+					dt 一般（詳細）
+					dd
+						| [mwform_radio name="events_sankawaku_ippan_#{obj.num}" id="events_sankawaku_ippan_#{obj.num}" children="カメコ,その他"]
+				dl.form__input.form__input--other-details.form__input--hide
+					dt その他（詳細）
+					dd
+						| [mwform_text name="events_sankawaku_sonota_#{obj.num}" id="events_sankawaku_sonota_#{obj.num}" class="form-parts__textline" placeholder="とくになければ一般とお書きください。"]
+		if obj.num != 10
+			p.form__member__add.action-btn__item.action-btn__item--mini.action-btn__item--disable 参加者を追加する
+p.form__attention
+	| [mwform_checkbox name="events_attention" id="events_attention" children="注意事項に同意した上で申請します。"]
+.action-btn
+	| [mwform_submitButton name="mwform_submitButton-346" confirm_value="確認する" submit_value="送信する"]
+
+
+

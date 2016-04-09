@@ -1,0 +1,75 @@
+{
+	"index": {
+		"meta": {
+			"title": "Cos Levius",
+			"description": "デスクリプション",
+			"keyword": "キーワード"
+		}
+	},
+	"globalnav": [
+		{
+			"name":"ホーム",
+			"ename":"home"
+		},
+		{
+			"name":"CosLeviusとは",
+			"ename":"about"
+		},
+		{
+			"name":"注意事項",
+			"ename":"rules"
+		},
+		{
+			"name":"参加方法",
+			"ename":"join"
+		},
+		{
+			"name":"イベント情報",
+			"ename":"events"
+		},
+		{
+			"name":"アクセス情報",
+			"ename":"access"
+		},
+		{
+			"name":"主催ブログ",
+			"ename":"blog"
+		},
+		{
+			"name":"お問い合わせ",
+			"ename":"contacts"
+		}
+	],
+	"numnum" : [
+		{
+			"num": "01"
+		},
+		{
+			"num": "02"
+		},
+		{
+			"num": "03"
+		},
+		{
+			"num": "04"
+		},
+		{
+			"num": "05"
+		},
+		{
+			"num": "06"
+		},
+		{
+			"num": "07"
+		},
+		{
+			"num": "08"
+		},
+		{
+			"num": "09"
+		},
+		{
+			"num": "10"
+		}
+	]
+}

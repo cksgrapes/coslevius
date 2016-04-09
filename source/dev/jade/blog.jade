@@ -1,0 +1,108 @@
+extends templates/_layout.jade
+
+block content
+	.page-background
+		main.main
+			.main-heading
+				.main-heading--en Blog
+				h1.main-heading--ja ブログ
+			.contents
+				.main-column
+					section.section--blog
+						p.section--blog__date 2015年12月24日
+						h2.section--blog__title: span リニューアル！
+						.section--blog__body
+							p サイトを<a href="">リニユアル</a>します！！<br>予定は1月頃！<br>サイトを丸っと新しくして<br>申請もしやすくなるはずです！（？）
+							p 3年がたち、<br>大きくなったレヴィを<br>もっともっとみんなの力で育てていきましょう！！
+							ul.eventreport-list
+								li
+									a(href='http://coslevius.cks/wp-content/uploads/2016/03/4.jpg')
+										img(src='http://coslevius.cks/wp-content/uploads/2016/03/4-80x80.jpg', alt='', title='')
+								li
+									a(href='http://coslevius.cks/wp-content/uploads/2016/03/4.jpg')
+										img(src='http://coslevius.cks/wp-content/uploads/2016/03/4-80x80.jpg', alt='', title='')
+								li
+									a(href='http://coslevius.cks/wp-content/uploads/2016/03/4.jpg')
+										img(src='http://coslevius.cks/wp-content/uploads/2016/03/4-80x80.jpg', alt='', title='')
+								li
+									a(href='http://coslevius.cks/wp-content/uploads/2016/03/4.jpg')
+										img(src='http://coslevius.cks/wp-content/uploads/2016/03/4-80x80.jpg', alt='', title='')
+								li
+									a(href='http://coslevius.cks/wp-content/uploads/2016/03/4.jpg')
+										img(src='http://coslevius.cks/wp-content/uploads/2016/03/4-80x80.jpg', alt='', title='')
+								li
+									a(href='http://coslevius.cks/wp-content/uploads/2016/03/4.jpg')
+										img(src='http://coslevius.cks/wp-content/uploads/2016/03/4-80x80.jpg', alt='', title='')
+								li
+									a(href='http://coslevius.cks/wp-content/uploads/2016/03/4.jpg')
+										img(src='http://coslevius.cks/wp-content/uploads/2016/03/4-80x80.jpg', alt='', title='')
+								li
+									a(href='http://coslevius.cks/wp-content/uploads/2016/03/4.jpg')
+										img(src='http://coslevius.cks/wp-content/uploads/2016/03/4-80x80.jpg', alt='', title='')
+								li
+									a(href='http://coslevius.cks/wp-content/uploads/2016/03/3.jpg')
+										img(src='http://coslevius.cks/wp-content/uploads/2016/03/3-80x80.jpg', alt='altいれてみた', title='altいれてみた')
+								li
+									a(href='http://coslevius.cks/wp-content/uploads/2016/03/2.jpg')
+										img(src='http://coslevius.cks/wp-content/uploads/2016/03/2-80x80.jpg', alt='', title='')
+								li
+									a(href='http://coslevius.cks/wp-content/uploads/2016/03/1.jpg')
+										img(src='http://coslevius.cks/wp-content/uploads/2016/03/1-80x80.jpg', alt='', title='')
+
+						.section--blog__data <a href="">コメントする</a>（2件） -　<a href="">業務連絡</a>
+					.comments
+						form.comments__form
+							input.comments__form__input.comments__form__name(type="text",placeholder="名前を入力してください（必須）")
+							input.comments__form__input.comments__form__email(type="text",placeholder="メールアドレスを入力してください")
+							textarea.comments__form__textarea(name="", cols="30", rows="10", placeholder="コメントをどうぞ。")
+							.action-btn.comments__form__submit
+								button.action-btn__item.action-btn__item--mini: span コメントを投稿する
+						.comments__post
+							ul.comments__post__data
+								li.comments__post__name 雛月ましろ
+								li.comments__post__date 2015/12/15　12:45
+							.comments__post__body
+								p コメントのテストイメージです。こんなコメントをするかもしれない。<br>どんなコメントだかわからないけれど、まあ、コメントが入りたいきもち。
+						.comments__post
+							ul.comments__post__data
+								li.comments__post__name 雛月ましろ
+								li.comments__post__date 2015/12/15　12:45
+							.comments__post__body
+								p コメントのテストイメージです。こんなコメントをするかもしれない。<br>どんなコメントだかわからないけれど、まあ、コメントが入りたいきもち。
+							.comments__post
+								ul.comments__post__data
+									li.comments__post__name 雛月ましろ
+									li.comments__post__date 2015/12/15　12:45
+								.comments__post__body
+									p コメントのテストイメージです。こんなコメントをするかもしれない。<br>どんなコメントだかわからないけれど、まあ、コメントが入りたいきもち。
+					section.section--blog
+						p.section--blog__date 2015年12月24日
+						h2.section--blog__title: span リニューアル！
+						.section--blog__data <a href="">コメントする</a>（2件） -　<a href="">業務連絡</a>
+					section.section--blog
+						p.section--blog__date 2015年12月24日
+						h2.section--blog__title: span リニューアル！
+						.section--blog__data <a href="">コメントする</a>（2件） -　<a href="">業務連絡</a>
+				.sidebar--2columns.sidebar--2columns--blog
+					.sidebar__box
+						p.sidebar__title カテゴリ
+						ul.menu-list
+							li.current: a(href=""): span 参加申請
+							li: a(href=""): span 料金
+							li: a(href=""): span キャンセルについて
+							li: a(href=""): span その他
+					.sidebar__box
+						p.sidebar__title カテゴリ
+						ul.menu-list
+							li.current: a(href=""): span 参加申請
+							li: a(href=""): span 料金
+							li: a(href=""): span キャンセルについて
+							li: a(href=""): span その他
+					.sidebar__box
+						p.sidebar__title カテゴリ
+						ul.menu-list
+							li.current: a(href=""): span 参加申請
+							li: a(href=""): span 料金
+							li: a(href=""): span キャンセルについて
+							li: a(href=""): span その他
+
